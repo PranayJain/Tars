@@ -1,0 +1,120 @@
+{
+    "gammaAccess": {
+        "url": "",
+        "userName": "",
+        "password": ""
+    },
+    "repositories": [
+        {
+            "dataDir": "",
+            "repository": {
+                "uid": "4c9ca740c0fa319d21a188c15198cb87",
+                "projectName": "cppteamcity",
+                "languages": [
+                    "CPP"
+                ],
+                "sources": {
+                    "baseDir": "",
+                    "exclusions": [
+                        "thirdparty",
+                        "third-party",
+                        "3rd-party",
+                        "external",
+                        "generated",
+                        "mock",
+                        "test",
+                        "build"
+                    ]
+                }
+            },
+            "settings": {
+                "additionalOptions": [],
+                "includePaths": []
+            },
+            "modules": {
+                "codeissues": [
+                    {
+                        "name": "cppcheck",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "CodingStyle",
+                                    "type": "multiselect",
+                                    "value": [
+                                        "style",
+                                        "performance",
+                                        "portability"
+                                    ],
+                                    "choices": [
+                                        "style",
+                                        "performance",
+                                        "portability",
+                                        "warning",
+                                        "information",
+                                        "unusedFunction",
+                                        "missingInclude"
+                                    ],
+                                    "required": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "gamma_cxx",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    }
+                ],
+                "unittest": [
+                    {
+                        "name": "gtest",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "coverage": [
+                    {
+                        "name": "gcov",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "relevance": [
+                    {
+                        "name": "relevance",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
